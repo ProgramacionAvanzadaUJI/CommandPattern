@@ -6,6 +6,7 @@ import command.AccionEnciendeDVD;
 import command.AccionEnciendeTV;
 import electrodomestico.DVD;
 import electrodomestico.TV;
+import macro.LlegoACasa;
 
 /**
  * Created by oscar on 11/4/16.
@@ -18,5 +19,8 @@ public class CargadorTelemando {
         DVD dvd = new DVD();
         telemando.setAccion(TipoAccion.ENCENDER_DVD, new AccionEnciendeDVD(dvd));
         telemando.setAccion(TipoAccion.APAGAR_DVD, new AccionApagaDVD(dvd));
+
+        // Una macro
+        telemando.setAccion(TipoAccion.LLEGO_A_CASA, new LlegoACasa(tv, dvd));
     }
 }

@@ -21,4 +21,11 @@ public class Main {
         telemando.ejecutaAccion(TipoAccion.APAGAR_TV);
         telemando.ejecutaAccion(TipoAccion.APAGAR_DVD);
     }
+
+    private void llegoACasa() {
+        CargadorTelemando cargadorTelemando = new CargadorTelemando();
+        Telemando telemando = new Telemando();
+        cargadorTelemando.cargaTelemando(telemando);
+        telemando.ejecutaAccion(TipoAccion.LLEGO_A_CASA);
+    }
 }

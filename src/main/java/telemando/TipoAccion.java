@@ -11,5 +11,6 @@ public enum TipoAccion {
     APAGAR_TV,
     APAGAR_DVD,
     APAGAR_HIFI,
-    APAGAR_AA;
+    APAGAR_AA,
+    LLEGO_A_CASA;
 }
